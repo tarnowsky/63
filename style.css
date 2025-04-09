@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8e6ff;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.top {
+    margin-top: 10vh;
+
+}
+
+.center-image {
+    display: flex;
+    gap: 10px;
+    position: relative;
+    z-index: 10;
+}
+
+.bottom {
+    padding-bottom: 10vh;
+}
+
+.center-image img {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.floating-element {
+    position: absolute;
+    user-select: none;
+    z-index: 5;
+    opacity: 0.8;
+    animation: float 15s linear infinite;
+}
+
+.number {
+    font-weight: bold;
+    color: #9c27b0;
+}
+
+.heart {
+    color: #ff4081;
+}
+
+.flower {
+    color: #4caf50;
+}
+
+.love-phrase {
+    font-weight: bold;
+    color: #e91e63;
+}
+
+@keyframes float {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+        transform: translate(100px, 50px) rotate(90deg);
+    }
+    50% {
+        transform: translate(50px, 100px) rotate(180deg);
+    }
+    75% {
+        transform: translate(-50px, 50px) rotate(270deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+}
+h1{
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2, h3 {
+    font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+    font-family: "Noticia Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main {
+    margin: 20px 0;
+    text-align: justify;
+    text-wrap:unset;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+
+    background-color: rgba(255, 255, 255, 0.811);
+    padding: 0 30px;
+    border-radius: 55px;
+}
